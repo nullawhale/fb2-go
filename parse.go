@@ -1,45 +1,58 @@
 package main
 
 import (
+	"bytes"
 	"encoding/xml"
 	"fmt"
+	"io"
 	"io/ioutil"
 	"os"
+	"strings"
 )
 
 func main() {
 	path := os.Args[1]
 
-	xmlFile, err := os.Open(path)
+	//var fb2 FB2
+
+	data, err := ioutil.ReadFile(path)
 	if err != nil {
-		fmt.Println(err)
+		panic(err)
 	}
-
-	defer xmlFile.Close()
-
-	byteValue, err := ioutil.ReadAll(xmlFile)
-	if err != nil {
-		fmt.Println(err)
+	decoder := xml.NewDecoder(bytes.NewReader(data))
+	for {
+		token, err := decoder.Token()
+		if err == io.EOF {
+			return
+		}
+		if err != nil {
+			panic(err)
+		}
+		if token == nil {
+			break
+		}
+		switch el := token.(type) {
+		case xml.CharData:
+			if !trimText(string(el)) {
+				printP(string(el))
+			}
+		}
 	}
+}
 
-	var fb2 FB2
+func trimText(s string) bool {
+	res := strings.Trim(s, "\n")
+	res = strings.Trim(s, "\t")
+	res = strings.TrimSpace(s)
 
-	xml.Unmarshal(byteValue, &fb2)
-
-	for i := 0; i < len(fb2.Description.TitleInfo.Genres); i++ {
-		fmt.Println("Genre: " + fb2.Description.TitleInfo.Genres[i])
+	if res == "" {
+		return true
+	} else {
+		return false
 	}
+}
 
-	var author string = fb2.Description.TitleInfo.Author[0].FName + " " +
-		fb2.Description.TitleInfo.Author[0].MName + " " +
-		fb2.Description.TitleInfo.Author[0].LName
-
-	var bookTitle string = fb2.Description.TitleInfo.BookTitle
-
-	var anotation string = fb2.Description.TitleInfo.Annotation.P[0] + "\n" +
-		fb2.Description.TitleInfo.Annotation.P[1]
-
-	var bookYear string = fb2.Description.TitleInfo.Date
-
-	fmt.Println(author + "\n" + bookTitle + "\n" + bookYear + "\n" + anotation)
+func printP(s string) {
+	words := strings.Fields(s)
+	fmt.Println(words)
 }
