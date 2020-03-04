@@ -11,7 +11,6 @@ import (
 )
 
 var N = 64
-var T = 4
 
 func main() {
 	path := os.Args[1]
@@ -101,26 +100,22 @@ func printTitle(words string, newline bool) {
 	words = strings.Repeat(" ", _N/2) + words + strings.Repeat(" ", _N/2)
 
 	if newline {
-		fmt.Println(strings.Repeat(".", N))
+		fmt.Println()
 	}
 	fmt.Println(words)
 	if newline {
-		fmt.Println(strings.Repeat(".", N))
+		fmt.Println()
 	}
 }
 
 func printP(words []string) {
 	row := words[0]
 	var ret []string
-	sect := true
 	for i := 1; i < len(words); i++ {
 		if length(words[i])+length(row) < N {
 			row += " " + words[i]
 		} else {
 			tmpWords := strings.Split(strings.TrimSpace(row), " ")
-			if sect {
-				tmpWords[0] = strings.Repeat(" ", T) + tmpWords[0]
-			}
 			var newRow string
 			_N := N
 			for _, w := range tmpWords {
@@ -135,7 +130,6 @@ func printP(words []string) {
 			row = newRow
 			ret = append(ret, row)
 			row = words[i]
-			sect = false
 		}
 	}
 	row = row + strings.Repeat(" ", N-length(row))
