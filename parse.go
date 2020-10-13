@@ -6,23 +6,44 @@ import (
 	"fmt"
 	"io"
 	"io/ioutil"
+	"log"
 	"os"
 	"strings"
 )
 
+var version = ""
+
 var N = 64
 
 func main() {
-	path := os.Args[1]
+
+	args := os.Args
+	arg := ""
+
+	if len(args) <= 1 {
+		log.Fatal("No args found")
+		return
+	} else {
+		arg = args[1]
+		if strings.HasPrefix(arg, "--") || strings.HasPrefix(arg, "-") {
+			if arg == "--version" || arg == "-v" {
+				fmt.Printf("version: %s\n", version)
+				return
+			} else {
+				log.Fatalf("wrong argument: %s\n", arg)
+				return
+			}
+		}
+	}
 
 	name := ""
 	isSection := false
 	isTitle := false
 	isPoem := false
 	var bodyAttrs = make(map[string]string)
-	data, err := ioutil.ReadFile(path)
+	data, err := ioutil.ReadFile(arg)
 	if err != nil {
-		panic(err)
+		log.Fatal(err)
 	}
 	decoder := xml.NewDecoder(bytes.NewReader(data))
 
@@ -32,7 +53,7 @@ func main() {
 			return
 		}
 		if err != nil {
-			panic(err)
+			log.Fatal(err)
 		}
 		switch el := token.(type) {
 		case xml.StartElement:
@@ -97,7 +118,11 @@ func main() {
 
 func printTitle(words string, newline bool) {
 	_N := N - length(words)
-	words = strings.Repeat(" ", _N/2) + words + strings.Repeat(" ", _N/2)
+	if _N >= N {
+		words = strings.Repeat(" ", _N) + words
+	} else {
+		//TODO: wrap title
+	}
 
 	if newline {
 		fmt.Println()
