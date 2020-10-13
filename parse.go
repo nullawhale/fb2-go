@@ -17,6 +17,8 @@ var N = 64
 
 func main() {
 
+	fmt.Print("Test")
+
 	args := os.Args
 	arg := ""
 
