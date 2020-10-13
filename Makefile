@@ -7,7 +7,7 @@ server:
 	go build -i -v -o ${OUT}-${VERSION} -ldflags="-X main.version=${VERSION}"
 
 run: server
-	./${OUT}-${VERSION} grav.fb2
+	./${OUT}-${VERSION} test.fb2
 
 clean:
 	-@rm ${OUT}-${VERSION} ${OUT}-v*

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FictionBook xmlns="http://www.gribuser.ru/xml/fictionbook/2.0" xmlns:l="http://www.w3.org/1999/xlink">
+<description>
+    <title-info>
+        <genre>antique</genre>
+        <author><first-name>Author</first-name><last-name>Author</last-name></author>
+        <book-title>Title</book-title>
+        <lang>en</lang>
+        <keywords>Author Title</keywords>
+    </title-info>
+    <document-info>
+        <author><first-name>Author</first-name><last-name>Author</last-name></author>
+        <program-used>calibre 4.99.4</program-used>
+        <date>13.10.2020</date>
+        <id>9575a978-3a68-4065-a207-bccdf149be01</id>
+        <version>1.0</version>
+    </document-info>
+    <publish-info>
+        <publisher>Organization</publisher>
+    </publish-info>
+</description>
+<body>
+<section>
+<p><strong>Author</strong></p>
+<p><strong>Title</strong></p>
+<p>refs</p>
+<p>quote</p>
+<p><strong><emphasis>quote aurtor</emphasis></strong></p>
+<p><emphasis>Textte xttexttextte xttextt exttexttexttexttex ttext texttexttex ttex ttext textt exttextt ext texttextt exttext texttextte xttexttex ttexttextt extte xttex ttexttexttextt exttexttexttextt exttexttextte x ttextte xttexttexttextte xttexttex ttextte xttexttex tt exttexttextte xttextte xttexttextt extte xtte xtt extt exttexttext text tex tt extte x ttext tex ttexttextte xttext textte xttextte xttexttextt ex ttexttex t texttexttexttex ttexttexttext tex ttexttexttex ttext texttextt exttextte xttexttextt exttexttexttext.</emphasis></p>
+<p><emphasis>Link link link</emphasis>.<sup>11</sup></p>
+<p><emphasis>Textte xttexttextte xttextt exttexttexttexttex ttext texttexttex ttex ttext textt exttextt ext texttextt exttext texttextte xttexttex ttexttextt extte xttex ttexttexttextt exttexttexttextt exttexttextte x ttextte xttexttexttextte xttexttex ttextte xttexttex tt exttexttextte xttextte xttexttextt extte xtte xtt extt exttexttext text tex tt extte x ttext tex ttexttextte xttext textte xttextte xttexttextt ex ttexttex t texttexttexttex ttexttexttext tex ttexttexttex ttext texttextt exttextte xttexttextt exttexttexttext.</emphasis></p>
+<p><emphasis>Textte xttexttextte xttextt exttexttexttexttex ttext texttexttex ttex ttext textt exttextt ext texttextt exttext texttextte xttexttex ttexttextt extte xttex ttexttexttextt exttexttexttextt exttexttextte x ttextte xttexttexttextte xttexttex ttextte xttexttex tt exttexttextte xttextte xttexttextt extte xtte xtt extt exttexttext text tex tt extte x ttext tex ttexttextte xttext textte xttextte xttexttextt ex ttexttex t texttexttexttex ttexttexttext tex ttexttexttex ttext texttextt exttextte xttexttextt exttexttexttext.</emphasis></p>
+<p><emphasis>Text text text text text text text.</emphasis></p>
+<p><emphasis>Textte xttexttextte xttextt exttexttexttexttex ttext texttexttex ttex ttext textt exttextt ext texttextt exttext texttextte xttexttex ttexttextt extte xttex ttexttexttextt exttexttexttextt exttexttextte x ttextte xttexttexttextte xttexttex ttextte xttexttex tt exttexttextte xttextte xttexttextt extte xtte xtt extt exttexttext text tex tt extte x ttext tex ttexttextte xttext textte xttextte xttexttextt ex ttexttex t texttexttexttex ttexttexttext tex ttexttexttex ttext texttextt exttextte xttexttextt exttexttexttext.</emphasis></p>
+<p><strong>Part 2</strong></p>
+<p><strong>Title 2</strong></p>
+<p><emphasis>Textte xttexttextte xttextt exttexttexttexttex ttext texttexttex ttex ttext textt exttextt ext texttextt exttext texttextte xttexttex ttexttextt extte xttex ttexttexttextt exttexttexttextt exttexttextte x ttextte xttexttexttextte xttexttex ttextte xttexttex tt exttexttextte xttextte xttexttextt extte xtte xtt extt exttexttext text tex tt extte x ttext tex ttexttextte xttext textte xttextte xttexttextt ex ttexttex t texttexttexttex ttexttexttext tex ttexttexttex ttext texttextt exttextte xttexttextt exttexttexttext.</emphasis></p>
+<empty-line/>
+<p><emphasis>Textte xttexttextte xttextt exttexttexttexttex ttext texttexttex ttex ttext textt exttextt ext texttextt exttext texttextte xttexttex ttexttextt extte xttex ttexttexttextt exttexttexttextt exttexttextte x ttextte xttexttexttextte xttexttex ttextte xttexttex tt exttexttextte xttextte xttexttextt extte xtte xtt extt exttexttext text tex tt extte x ttext tex ttexttextte xttext textte xttextte xttexttextt ex ttexttex t texttexttexttex ttexttexttext tex ttexttexttex ttext texttextt exttextte xttexttextt exttexttexttext.</emphasis></p>
+<p><emphasis>Textte xttexttextte xttextt exttexttexttexttex ttext texttexttex ttex ttext textt exttextt ext texttextt exttext texttextte xttexttex ttexttextt extte xttex ttexttexttextt exttexttexttextt exttexttextte x ttextte xttexttexttextte xttexttex ttextte xttexttex tt exttexttextte xttextte xttexttextt extte xtte xtt extt exttexttext text tex tt extte x ttext tex ttexttextte xttext textte xttextte xttexttextt ex ttexttex t texttexttexttex ttexttexttext tex ttexttexttex ttext texttextt exttextte xttexttextt exttexttexttext.</emphasis></p>
+<empty-line/>
+<p><emphasis>Poempoempoempoempoempoem</emphasis></p>
+<p><emphasis>poempoempoempoempoempoem</emphasis></p>
+<p><emphasis>poempoempoempoempoempoem</emphasis></p>
+<p><emphasis>poempoempoem</emphasis></p>
+<empty-line/>
+<p><emphasis>Textte xttexttextte xttextt exttexttexttexttex ttext texttexttex ttex ttext textt exttextt ext texttextt exttext texttextte xttexttex ttexttextt extte xttex ttexttexttextt exttexttexttextt exttexttextte x ttextte xttexttexttextte xttexttex ttextte xttexttex tt exttexttextte xttextte xttexttextt extte xtte xtt extt exttexttext text tex tt extte x ttext tex ttexttextte xttext textte xttextte xttexttextt ex ttexttex t texttexttexttex ttexttexttext tex ttexttexttex ttext texttextt exttextte xttexttextt exttexttexttext.</emphasis></p>
+</section>
+</body>
+
+<body name="notes">
+    <title>
+        <p>Notes</p>
+    </title>
+    <section id="n_1">
+        <title>
+            <p>1</p>
+        </title>
+        <p>aerg eargreagerg aerg grea earg. – <emphasis>aerg erg. gre.</emphasis></p>
+    </section>
+    <section id="n_2">
+        <title>
+            <p>2</p>
+        </title>
+        <p>srth srhtsrth.</p>
+    </section>
+    <section id="n_3">
+        <title>
+            <p>3</p>
+        </title>
+        <p>aergreg aerggrea .</p>
+    </section>
+</body>
+
+</FictionBook>
